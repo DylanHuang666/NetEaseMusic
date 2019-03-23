@@ -68,14 +68,18 @@
 .disc-container .light{
     width: 79vw;
     position: absolute;
+    animation: circle 20s infinite linear;
+    animation-play-state: paused;
 }
 .disc-container .cover{
     width: 50vw;
     position: absolute;
     border-radius: 50%;
+    animation: circle 20s infinite linear;
+    animation-play-state: paused;
 }
 .disc-container.playing .light,.disc-container.playing .cover{
-    animation: circle 20s infinite linear;
+    animation-play-state: running;
 }
 .song-description{
     color: #aeabac;
