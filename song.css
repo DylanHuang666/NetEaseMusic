@@ -21,11 +21,35 @@
     flex-direction: column;
     height: 100vh;
     background: transparent url(https://p4.music.126.net/C5X-M8V0LDpRKk1GhzXw6A==/109951163891633952.jpg) no-repeat center;
-    background-size: cover;
-    
+    background-size: cover;   
 }
 .disc-container{
     position: relative;
+}
+.disc-container .icon{
+    width: 10vw;
+    fill:white;
+}
+.disc-container .icon-wrapper{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16vw;
+    height: 16vw;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5)
+}
+.disc-container .icon-pause{
+    display: none;
+}
+.disc-container.playing .icon-play{
+    display: none;
+}
+.disc-container.playing .icon-pause{
+    display: block;
 }
 .disc-container .pointer{
     width: 25vw;
