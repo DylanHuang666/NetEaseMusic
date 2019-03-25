@@ -1,4 +1,26 @@
 $(function(){
+
+    let id=parseInt(location.search.match(/\bid=([^&]*)/)[1],10)
+    $.get('./songs.json').then(function(response){
+        let songs=response
+        let song = songs.filter(s=>s.id === id)[0]
+        let {url}=song
+        let audio=document.createElement('audio') 
+        audio.src=url
+        audio.oncanplay=function(){
+            audio.play()
+            $('.disc-container').addClass('playing')
+        }
+        $('.icon-pause').on('click',function(){
+            audio.pause()
+            $('.disc-container').removeClass('playing')
+        })
+        $('.icon-play').on('click',function(){
+            audio.play()
+            $('.disc-container').addClass('playing')
+        })
+    })
+
     $.get('/lyric.json').then(function(object){
         let {lyric}=object
         let array=lyric.split('\n')
@@ -17,18 +39,5 @@ $(function(){
             $p.appendTo($lyric.children('.lines'))
         })
     })
-    let audio=document.createElement('audio') 
-    audio.src='http://pnksng3qv.bkt.clouddn.com/%E9%99%88%E5%A5%95%E8%BF%85%20-%20%E5%8D%81%E5%B9%B4.mp3'
-    audio.oncanplay=function(){
-        audio.play()
-        $('.disc-container').addClass('playing')
-    }
-    $('.icon-pause').on('click',function(){
-        audio.pause()
-        $('.disc-container').removeClass('playing')
-    })
-    $('.icon-play').on('click',function(){
-        audio.play()
-        $('.disc-container').addClass('playing')
-    })    
+        
 })
