@@ -29,6 +29,31 @@ $(function(){
             audio.play()
             $('.disc-container').addClass('playing')
         })
+        setInterval(()=>{
+            let seconds = audio.currentTime
+            let minutes = ~~(seconds/60)
+            let left = seconds-minutes*60
+            let time = `${pad(minutes)}:${pad(left)}`
+            let $lines=$('.lines>p')
+            let $whichLine
+            for(let i=0;i<$lines.length;i++){
+                if($lines.eq(i+1).length !== 0 && $lines.eq(i).attr('data-time')<time && $lines.eq(i+1).attr('data-time')>time){
+                    $whichLine=$lines.eq(i)
+                    break
+                }
+            }
+            if($whichLine){
+                $whichLine.addClass('active').prev().removeClass('active')
+                let top=$whichLine.offset().top
+                let linesTop=$('.lines').offset().top
+                let delta=top-linesTop-$('.lyric').height()/3
+                $('.lines').css('transform',`translateY(-${delta}px)`)
+            }
+        },500)
+    }
+
+    function pad(number){
+        return number>=10 ? number+'' : '0'+number
     }
 
     function parseLyric(lyric){//获取歌词

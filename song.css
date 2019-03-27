@@ -21,7 +21,7 @@
     flex-direction: column;
     height: 100vh;
     background: transparent url(https://p4.music.126.net/C5X-M8V0LDpRKk1GhzXw6A==/109951163891633952.jpg) no-repeat center;
-    background-size: cover;   
+    background-size: cover;  
 }
 .disc-container{
     position: relative;
@@ -94,9 +94,15 @@
     line-height: 1.1;
     margin-bottom: 4vw;
 }
+.song-description .lines{
+    transition: transform 0.3s;
+}
 .song-description p{
     font-size: 16px;
-    line-height: 28px;   
+    line-height: 32px;   
+}
+.song-description p.active{
+    color: white;
 }
 .song-description .lyric{
     height:84px;
