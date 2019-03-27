@@ -17,11 +17,15 @@
 }
 
 .page{
+    height: 100vh;
+    background: url(https://p4.music.126.net/C5X-M8V0LDpRKk1GhzXw6A==/109951163891633952.jpg) no-repeat center;
+    background-size: cover;    
+}
+.deepColor{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: transparent url(https://p4.music.126.net/C5X-M8V0LDpRKk1GhzXw6A==/109951163891633952.jpg) no-repeat center;
-    background-size: cover;  
+    background-color: rgba(0,0,0,.5);
 }
 .disc-container{
     position: relative;
@@ -54,7 +58,7 @@
 .disc-container .pointer{
     width: 25vw;
     position: absolute;
-    left: 47%;
+    left: 46%;
 }
 .disc-container .disc{
     display: flex;
