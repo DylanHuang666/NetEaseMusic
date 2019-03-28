@@ -196,10 +196,10 @@ section.art .copyright{
     color: hsla(0,0%,100%,.8);
 }
 
-
-.popularMusic p{
+/*重复代码*/
+/* .popularMusic p{
     text-align: center;
-}
+} */
 .popular > ol{
     padding-left: calc(2px + 1.9vw);
 }
@@ -238,6 +238,9 @@ section.art .copyright{
     margin-left: -0.7vw;
     fill: #fe672e;
 }
+/*重复代码*/
+
+
 .popular > ol > li > a{
     display: flex;
     align-items: center;
@@ -249,4 +252,71 @@ section.art .copyright{
 }
 .popular .popularMusic a #number1,.popular .popularMusic a #number2,.popular .popularMusic a #number3{
     color: #df3436;
+}
+
+
+/*重复代码*/
+#searchSongList{
+    padding-left: calc(2px + 1.9vw);
+}
+.search > ol > li{
+    border-bottom: 1px solid #e2e2e3;
+    padding: 1.6vw 0;
+    position: relative;
+}
+.search > ol > li a{
+    text-decoration: none;
+    color: inherit;
+}
+.search > ol > li h3{
+    font-size: 4.53vw;
+    line-height: 6.67vw;
+}
+.search > ol > li p{
+    font-size: 3.2vw;
+    color: #888;
+    line-height: 4.8vw;
+    display: flex;
+    align-items: center;
+}
+.search > ol > li > a svg.icon-play-circled{
+    width: 8vw;
+    height: 8vw;
+    position: absolute;
+    right: 3vw;
+    top:50%;
+    transform: translateY(-50%);
+    fill: #aaa;
+}
+.search > ol > li p svg.icon-sq{
+    width: 5.5vw;
+    height: 4vw;
+    margin-left: -0.7vw;
+    fill: #fe672e;
+}
+/*重复代码*/
+#output{
+    line-height: 20px;
+    margin: 0 28px;
+    color: #507daf;
+    font-size: 15px;
+    /* border-bottom: 1px solid #e2e2e3; */
+}
+#output.active{
+    display: none;
+}
+.input-container{
+    text-align: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #e2e2e3;
+}
+#searchSong{
+    width: 325px;
+    height: 30px;  
+    border-radius: 30px;
+    background: #ebecec; 
+    border: none;
+    padding: 0 15px;
+    outline:none;
+    font-size: 14px;
 }
