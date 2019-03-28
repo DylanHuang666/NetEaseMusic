@@ -64,11 +64,8 @@ $('.siteNav').on('tabChange',function(e,index){
             })
             $li.attr('data-downloaded','yes')
         })
-    }else if(index===2){
-        $.get('./page3.json').then((response)=>{
-            
-            $li.attr('data-downloaded','yes')
-        })
+    }else if(index===2){        
+        $li.attr('data-downloaded','yes')  
     }
 })
 
