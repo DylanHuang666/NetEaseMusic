@@ -5,6 +5,8 @@ $(function(){
         let songs=response
         let song = songs.filter(s=>s.id === id)[0]
         let {url,name,lyric}=song
+        $('.cover').attr('src',song.cover)
+        $('.page').css('background',`url(${song.background}) no-repeat center`)
         initPlayer.call(undefined,url)
         initText(name,lyric)
     })
