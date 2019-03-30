@@ -21,9 +21,9 @@ body{
 }
 
 section>h2:first-child{
-    font-size: 17px;
+    font-size: 4.53vw;
     font-weight: normal;
-    border-left: 2px solid #d43c33;
+    border-left: 0.54vw solid #d43c33;
     padding-left: 1.9vw;
     margin: 5.6vw 0 4.5vw 0;
     line-height: 1;
@@ -70,7 +70,7 @@ section>h2:first-child{
 .siteNav > ol > li.active >div::before{
     content: '';
     position: absolute;
-    border-bottom: 2px solid #d33a31;
+    border-bottom: 0.54vw solid #d33a31;
     bottom: 0;
     left: 0vw;
     right: 0vw;
@@ -181,21 +181,21 @@ section.art .copyright{
 }
 .popularImg .container{
     width:100vw;
-    height: 145.88px;
-    padding-left: 20px;
-    padding-top: 25px;
+    height: 38.9vw;
+    padding-left: 5.33vw;
+    padding-top: 6.67vw;
     background-color: rgba(0,0,0,.2);
 }
 .popularImg .container .wordsImg{
     background: url(https://s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880) no-repeat;
-    width: 142px;
-    height: 67px;
-    background-size: 166px 97px;
-    background-position: -24px -30px;  
+    width: 37.87vw;
+    height: 17.87vw;
+    background-size: 44.27vw 25.87vw;
+    background-position: -6.4vw -8vw;  
 }
 .popularImg .container p{
-    margin-top: 10px;
-    font-size: 12px;
+    margin-top: 2.67vw;
+    font-size: 3.2vw;
     color: hsla(0,0%,100%,.8);
 }
 
@@ -204,7 +204,7 @@ section.art .copyright{
     text-align: center;
 } */
 .popular > ol{
-    padding-left: calc(2px + 1.9vw);
+    padding-left: calc(0.54vw + 1.9vw);
 }
 .popular > ol > li{
     border-bottom: 1px solid #e2e2e3;
@@ -249,8 +249,8 @@ section.art .copyright{
     align-items: center;
 }
 .popular .popularMusic div.number{
-    width: 28px;
-    font-size: 17px;
+    width: 7.47vw;
+    font-size: 4.53vw;
     color: #888;
 }
 .popular .popularMusic a #number1,.popular .popularMusic a #number2,.popular .popularMusic a #number3{
@@ -299,10 +299,10 @@ section.art .copyright{
 }
 /*重复代码*/
 #output{
-    line-height: 20px;
-    margin: 0 28px;
+    line-height: 5.33vw;
+    margin: 0 7.47vw;
     color: #507daf;
-    font-size: 15px;
+    font-size: 4vw;
     /* border-bottom: 1px solid #e2e2e3; */
 }
 #output.active{
@@ -310,16 +310,16 @@ section.art .copyright{
 }
 .input-container{
     text-align: center;
-    padding: 16px 0;
+    padding: 4.27vw 0;
     border-bottom: 1px solid #e2e2e3;
 }
 #searchSong{
-    width: 325px;
-    height: 30px;  
-    border-radius: 30px;
+    width: 86.67vw;
+    height: 8vw;  
+    border-radius: 8vw;
     background: #ebecec; 
     border: none;
-    padding: 0 15px;
-    outline:none;
-    font-size: 14px;
+    padding: 0 4vw;
+    font-size: 3.73vw;
+    outline: none;
 }

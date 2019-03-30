@@ -18,16 +18,25 @@
         transform: rotate(360deg);
     }
 }
-
+@media screen and (max-width:450px) {
+    .deepColor{
+        height: 100vh;
+    }
+}
+@media screen and (min-width:480px) {
+    .deepColor{
+        height: auto;
+    }
+}
 .page{
-    height: 100vh;
-    background: url(https://p4.music.126.net/C5X-M8V0LDpRKk1GhzXw6A==/109951163891633952.jpg) no-repeat center;
+    /* height: 100vh; */
+    /* background: url(https://p4.music.126.net/C5X-M8V0LDpRKk1GhzXw6A==/109951163891633952.jpg) no-repeat center; */
     background-size: cover;    
 }
 .deepColor{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: rgba(0,0,0,.5);
 }
 .disc-container{
@@ -92,11 +101,11 @@
     color: #aeabac;
     text-align: center;
     line-height: 2;
-    margin-top: 25px;
+    margin-top: 6.67vw;
     flex-grow: 1;
 }
 .song-description h1{
-    font-size: 18px;
+    font-size: 4.8vw;
     color: white;
     line-height: 1.1;
     margin-bottom: 4vw;
@@ -105,14 +114,14 @@
     transition: transform 0.3s;
 }
 .song-description p{
-    font-size: 16px;
-    line-height: 32px;   
+    font-size: 4.27vw;
+    line-height: 8.53vw;   
 }
 .song-description p.active{
     color: white;
 }
 .song-description .lyric{
-    height:84px;
+    height:22.4vw;
     overflow: hidden;
 }
 .page .links{
@@ -131,6 +140,7 @@
     background: transparent;
     letter-spacing: 1vw;
     border-radius: 5vw;
+    font-size: 4.27vw;
 }
 .page .links a.main{
     background: #d43b32;
